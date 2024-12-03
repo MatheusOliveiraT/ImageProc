@@ -16,6 +16,9 @@ for i = 1:L
   func(i) = (L-1) * (counts(i)/MN);
 endfor
 
+figure();
+plot(1:256, func);
+
 func2 = zeros(1, 256, "uint8");
 
 for i = 1:L
